@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A163FD62B8FE31E00B50C59 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A163FD52B8FE31E00B50C59 /* DetailViewController.swift */; };
 		3A5F60652B8ECC160007E4F2 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F60642B8ECC160007E4F2 /* ItemCell.swift */; };
 		3AAD7B9D2B86B15F009E6B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAD7B9C2B86B15F009E6B38 /* AppDelegate.swift */; };
 		3AAD7B9F2B86B15F009E6B38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAD7B9E2B86B15F009E6B38 /* SceneDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A163FD52B8FE31E00B50C59 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3A5F60642B8ECC160007E4F2 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		3AAD7B992B86B15F009E6B38 /* LootLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LootLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAD7B9C2B86B15F009E6B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				3AAD7B9C2B86B15F009E6B38 /* AppDelegate.swift */,
 				3AAD7B9E2B86B15F009E6B38 /* SceneDelegate.swift */,
 				3AAD7BA22B86B15F009E6B38 /* Main.storyboard */,
+				3A163FD52B8FE31E00B50C59 /* DetailViewController.swift */,
 				3AAD7BCE2B86B883009E6B38 /* Item.swift */,
 				3AAD7BD02B86C035009E6B38 /* ItemStore.swift */,
 				3AAD7BCC2B86B6EF009E6B38 /* ItemsViewController.swift */,
@@ -273,6 +276,7 @@
 				3AAD7B9D2B86B15F009E6B38 /* AppDelegate.swift in Sources */,
 				3AAD7BD12B86C035009E6B38 /* ItemStore.swift in Sources */,
 				3AAD7B9F2B86B15F009E6B38 /* SceneDelegate.swift in Sources */,
+				3A163FD62B8FE31E00B50C59 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
