@@ -25,7 +25,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
  
         // Accessing the root view controller of a window and assuming(forced downcast as!) that it's an instance of `ItemsViewController`
-        let itemsController = window!.rootViewController as! ItemsViewController
+
+        let navController=window!.rootViewController as! UINavigationController
+        let itemsController=navController.topViewController as! ItemsViewController
         itemsController.itemStore=itemStore
     }
 

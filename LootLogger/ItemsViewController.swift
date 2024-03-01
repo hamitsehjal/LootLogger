@@ -16,6 +16,12 @@ class ItemsViewController: UITableViewController {
         tableView.rowHeight=UITableView.automaticDimension
         tableView.estimatedRowHeight=65
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tableView.reloadData()
+    }
     // add new item
     @IBAction func addNewItem(_ sender:UIButton){
         
