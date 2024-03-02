@@ -23,7 +23,7 @@ class ItemsViewController: UITableViewController {
         tableView.reloadData()
     }
     // add new item
-    @IBAction func addNewItem(_ sender:UIButton){
+    @IBAction func addNewItem(_ sender:UIBarButtonItem){
         
         // create a new item and add it to the allItems property of itemStore
         // also return the newly created item
@@ -62,24 +62,24 @@ class ItemsViewController: UITableViewController {
         
     }
     // toggle Editing Mode
-    @IBAction func toggleEditingMode(_ sender:UIButton){
-//        print("Toggle Editing Mode clicked")
-        if isEditing{
-            // change text of the button to inform user of state
-            sender.setTitle("Edit", for: .normal)
-            
-            // Turn off the editing mode
-            setEditing(false, animated: true)
-        }
-        else{
-            
-            // change the text of the button to inform user of state
-            sender.setTitle("Done", for: .normal)
-            
-            // Turn on the editing mode
-            setEditing(true, animated: true)
-        }
-    }
+//    @IBAction func toggleEditingMode(_ sender:UIButton){
+////        print("Toggle Editing Mode clicked")
+//        if isEditing{
+//            // change text of the button to inform user of state
+//            sender.setTitle("Edit", for: .normal)
+//            
+//            // Turn off the editing mode
+//            setEditing(false, animated: true)
+//        }
+//        else{
+//            
+//            // change the text of the button to inform user of state
+//            sender.setTitle("Done", for: .normal)
+//            
+//            // Turn on the editing mode
+//            setEditing(true, animated: true)
+//        }
+//    }
     
     // Number of rows in the Table
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -124,5 +124,10 @@ class ItemsViewController: UITableViewController {
         default:
             preconditionFailure("Unexpected Segue Failure")
         }
+    }
+    
+    required init?(coder aDecoder:NSCoder){
+        super.init(coder: aDecoder)
+        navigationItem.leftBarButtonItem=editButtonItem
     }
 }

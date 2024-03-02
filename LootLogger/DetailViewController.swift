@@ -8,6 +8,11 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    var item:Item!{
+        didSet{
+            navigationItem.title=item.name
+        }
+    }
     
     @IBOutlet var nameField: UITextField!
     @IBOutlet var serialNumberField: UITextField!
@@ -30,8 +35,7 @@ class DetailViewController: UIViewController {
     }()
     
 
-    var item:Item!
-    
+   
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
